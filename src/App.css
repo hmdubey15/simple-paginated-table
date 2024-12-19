@@ -1,0 +1,75 @@
+.App {
+  width: 90%;
+  background-color: FloralWhite;
+  margin: 100px auto;
+  width: 55%;
+  height: 450px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paginated-table {
+  width: 90%;
+  border-collapse: collapse;
+}
+
+.paginated-table th,
+.paginated-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.paginated-table th {
+  background-color: #4CAF50;
+  color: white;
+  text-transform: uppercase;
+}
+
+.paginated-table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.paginated-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.paginated-table tr:hover {
+  background-color: rgb(219, 238, 243);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 1rem;
+}
+
+.pagination-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-btn:hover {
+  background-color: limegreen;
+}
+
+.pagination-btn.active {
+  background-color: darkgreen;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.pagination-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
